@@ -1,0 +1,13 @@
+{
+  "name": "unison-nova-extension",
+  "private": true,
+  "author": "Chris Krycho <hello@chriskrycho.com>",
+  "devDependencies": {
+    "typescript": "5.2",
+    "tree-sitter-unison": "kylegoetz/tree-sitter-unison#1df9e35477b4261abb7cd9d3ab5b2f565fc3fd8a"
+  },
+  "volta": {
+    "node": "18.17.1",
+    "pnpm": "8.6.12"
+  }
+}

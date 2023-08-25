@@ -1,0 +1,35 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  tree-sitter-unison:
+    specifier: kylegoetz/tree-sitter-unison#1df9e35477b4261abb7cd9d3ab5b2f565fc3fd8a
+    version: github.com/kylegoetz/tree-sitter-unison/1df9e35477b4261abb7cd9d3ab5b2f565fc3fd8a
+  typescript:
+    specifier: '5.2'
+    version: 5.2.2
+
+packages:
+
+  /nan@2.17.0:
+    resolution: {integrity: sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==}
+    dev: true
+
+  /typescript@5.2.2:
+    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true
+
+  github.com/kylegoetz/tree-sitter-unison/1df9e35477b4261abb7cd9d3ab5b2f565fc3fd8a:
+    resolution: {tarball: https://codeload.github.com/kylegoetz/tree-sitter-unison/tar.gz/1df9e35477b4261abb7cd9d3ab5b2f565fc3fd8a}
+    name: tree-sitter-unison
+    version: 1.0.1
+    prepare: true
+    requiresBuild: true
+    dependencies:
+      nan: 2.17.0
+    dev: true

@@ -4,6 +4,10 @@
   "organization": "Chris Krycho",
   "description": "Unison programming language support",
   "version": "1.0",
-  "categories": ["languages"],
-  "activationEvents": ["onLanguage:unison"]
+  "categories": ["languages", "issues"],
+  "activationEvents": ["onLanguage:unison", "onCommand:startUCM"],
+  "entitlements": { "process": true },
+  "bugs": "https://github.com/chriskrycho/unison-nova-extension",
+  "homepage": "https://github.com/chriskrycho/unison-nova-extension/issues",
+  "funding": "https://github.com/sponsors/chriskrycho"
 }
