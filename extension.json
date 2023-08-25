@@ -4,5 +4,6 @@
   "organization": "Chris Krycho",
   "description": "Unison programming language support",
   "version": "1.0",
-  "categories": ["languages"]
+  "categories": ["languages"],
+  "activationEvents": ["onLanguage:unison"]
 }
