@@ -1,43 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<syntax name="mylang">
+<syntax name="unison">
     <meta>
-        <name>unison</name>
-        <type>script</type>
-        <preferred-file-extension>mylang</preferred-file-extension>
+        <name>Unison</name>
+        <type>compiled</type>
+        <preferred-file-extension>u</preferred-file-extension>
     </meta>
-    
+
     <detectors>
-        <extension priority="1.0">mylang</extension>
+        <extension priority="1.0">u</extension>
     </detectors>
-    
+
+    <!-- TODO: work out what other things should trigger indent/dedent -->
     <indentation>
         <increase>
-            <expression></expression>
+            <expression>=|\{\{|let|if|else|(match .* with)</expression>
         </increase>
         <decrease>
-            <expression></expression>
+            <expression>\}\}</expression>
         </decrease>
     </indentation>
-    
+
     <comments>
         <single>
-            <expression>//</expression>
+            <expression>--</expression>
         </single>
         <multiline>
             <starts-with>
-                <expression></expression>
+                <expression>{{</expression>
             </starts-with>
             <ends-with>
-                <expression></expression>
+                <expression>}}</expression>
             </ends-with>
         </multiline>
     </comments>
-    
-    <injection>
-        <expression>^(mylang)$</expression>
-    </injection>
-    
-    <tree-sitter language="mylang">
+
+    <tree-sitter>
         <highlights path="highlights.scm" />
         <folds path="folds.scm" />
         <symbols path="symbols.scm" />
