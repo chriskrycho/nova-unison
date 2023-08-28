@@ -9,5 +9,6 @@
   "entitlements": { "process": true },
   "bugs": "https://github.com/chriskrycho/unison-nova-extension",
   "homepage": "https://github.com/chriskrycho/unison-nova-extension/issues",
-  "funding": "https://github.com/sponsors/chriskrycho"
+  "funding": "https://github.com/sponsors/chriskrycho",
+  "license": "BlueOak-1.0.0"
 }
