@@ -9,13 +9,17 @@ Syntax highlighting and language server integration for [**Unison**][unison]. Un
 - **Distributed computation:** influenced by Erlang and Elixir: with type safe ways to for break up your program and run it across many node… with no complicated deployment steps or coordination.
 - **Storing and editing code:** using a database instead of plain text files, which enables all sorts of cool things you wouldn’t expect—no builds, instant renames across a codebase without breaking consumers, integrated testing (with an actually perfect cache for what needs to rerun)…
 
-## Language Support
+## Support/Roadmap
 
-This package currently supports the following features of Unison: **_LITERALLY NONE OF THEM._** Because I just started it.
+This extension currently supports basic syntax highlighting (using [Kyle Goetz’s tree-sitter grammar][ts]).
 
-Planned, though:
+[ts]: https://github.com/kylegoetz/tree-sitter-unison
 
-- [ ] syntax highlighting
+![](./Images/extension/basic-examples.png)
+
+The roadmap/basic plan:
+
+- [x] syntax highlighting
 - [ ] LSP integration
 - [ ] running `ucm` directly in Nova
 - [ ] viewing the `ui` directly within Nova
