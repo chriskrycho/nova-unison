@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@types/nova-editor':
+    specifier: ^1.0.1
+    version: 1.0.1
+  prettier:
+    specifier: ^3.0.2
+    version: 3.0.2
   tree-sitter-unison:
     specifier: kylegoetz/tree-sitter-unison#1df9e35477b4261abb7cd9d3ab5b2f565fc3fd8a
     version: github.com/kylegoetz/tree-sitter-unison/1df9e35477b4261abb7cd9d3ab5b2f565fc3fd8a
@@ -14,8 +20,24 @@ devDependencies:
 
 packages:
 
+  /@types/nova-editor-node@5.1.0:
+    resolution: {integrity: sha512-Jj8wnUGOYmmNgd61JHSG0kV5o/zlthVn92qCdLz6VYa7CM4KSmwPjCeCzw2JqjJw6QONpcMXTVH9TKtLCnFf1Q==}
+    dev: true
+
+  /@types/nova-editor@1.0.1:
+    resolution: {integrity: sha512-aFZ2n+zL5Lw1zVCq4h3ipA3v/bam3+f6EN88HTtAon/8AEUxvbWtO23p3B/rDRBI9RH96wkfWBHqjtOEUEgHkA==}
+    dependencies:
+      '@types/nova-editor-node': 5.1.0
+    dev: true
+
   /nan@2.17.0:
     resolution: {integrity: sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==}
+    dev: true
+
+  /prettier@3.0.2:
+    resolution: {integrity: sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /typescript@5.2.2:
