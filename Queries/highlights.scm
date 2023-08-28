@@ -10,6 +10,7 @@
 [
   (kw_forall)
   (unique_kw)
+  (structural_kw)
   (type_kw)
   (kw_equals)
   (do)
@@ -18,6 +19,7 @@
 (kw_let) @keyword.function
 (type_kw) @keyword.storage.type
 (unique) @keyword.storage.modifier
+(structural) @keyword.storage.modifier
 ("use") @keyword.control.import
 
 
@@ -31,6 +33,7 @@
   (arrow_symbol)
   (">")
   (or)
+  (and)
   (bang)
 ] @operator
 
