@@ -38,5 +38,6 @@
         <highlights path="highlights.scm" />
         <folds path="folds.scm" />
         <symbols path="symbols.scm" />
+        <injections />
     </tree-sitter>
 </syntax>
