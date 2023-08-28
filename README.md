@@ -15,7 +15,7 @@ This extension currently supports basic syntax highlighting (using [Kyle Goetzâ€
 
 [ts]: https://github.com/kylegoetz/tree-sitter-unison
 
-![](./Images/extension/basic-examples.png)
+![](https://github.com/chriskrycho/unison-nova-extension/blob/main/Images/extension/basic-examples.png)
 
 The roadmap/basic plan:
 
