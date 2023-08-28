@@ -1,5 +1,7 @@
 {
-  "workspace.art_style" : 1,
-  "workspace.color" : 6,
-  "workspace.name" : "Unison Nova"
+  "prettier.format-on-save": "Disable",
+  "prettier.format-on-save.ignore-without-config": "Global Default",
+  "workspace.art_style": 1,
+  "workspace.color": 6,
+  "workspace.name": "Unison Nova"
 }
