@@ -20,6 +20,11 @@
         </decrease>
     </indentation>
 
+    <injection>
+        <expression>^(unison)$</expression>
+    </injection>
+
+
     <comments>
         <single>
             <expression>--</expression>
