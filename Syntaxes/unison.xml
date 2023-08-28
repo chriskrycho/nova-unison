@@ -35,9 +35,9 @@
     </comments>
 
     <tree-sitter>
-        <highlights path="highlights.scm" />
-        <folds path="folds.scm" />
-        <symbols path="symbols.scm" />
+        <highlights />
         <injections />
+        <folds />
+        <symbols />
     </tree-sitter>
 </syntax>
