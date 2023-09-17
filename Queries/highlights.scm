@@ -1,10 +1,10 @@
 ;; Primitives
 (comment) @comment
-(nat) @constant.numeric
-(unit) @constant.builtin
-(literal_char) @constant.character
+(nat) @value.number
+(unit) @identifier.core
+(literal_char) @value.symbol
 (literal_text) @string
-(literal_boolean) @constant.builtin.boolean
+(literal_boolean) @value.boolean
 
 ;; Keywords
 [
@@ -14,18 +14,20 @@
   (type_kw)
   (kw_equals)
   (do)
+  (ability)
+  (where)
 ] @keyword
 
-(kw_let) @keyword.function
-(type_kw) @keyword.storage.type
-(unique) @keyword.storage.modifier
-(structural) @keyword.storage.modifier
-("use") @keyword.control.import
+(kw_let) @keyword.construct
+(type_kw) @keyword.construct
+(unique) @keyword.modifier
+(structural) @keyword.modifier
+("use") @keyword
 
 
 [
   (type_constructor)
-] @constructor
+] @keyword.construct
 
 [
   (operator)
@@ -44,25 +46,34 @@
   (match)
   (with)
   (cases)
-] @keyword.control.conditional
+] @keyword.condition
 
-(blank_pattern) @variable.builtin
+(blank_pattern) @identifer.global
 
 ;; Types
-(record_field name: (wordy_id) @variable.other.member type: (wordy_id) @type)
-[
-  (type_name)
-  (type_signature)
-  (effect)
-] @type
+(record_field name: (wordy_id) @identifier.property type: (wordy_id) @identifier.type)
+(type_constructor (type_name (wordy_id) @identifier.type))
+(ability_declaration type_name: (wordy_id) @identifier.type type_arg: (wordy_id) @identifier.argument)
+(effect (wordy_id) @identifier.type.protocol) ;; NOTE: an effect is just like a type, but in signature we special case it
 
-(term_definition) @variable
+;; Namespaces
+(path) @identifier
+(namespace) @identifier
+
+;; Terms
+(type_signature term_name: (path)? @identifier term_name: (wordy_id) @identifier.variable)
+(type_signature (wordy_id) @identifier.type)
+(type_signature (delayed (wordy_id)) @identifier.type)
+
+(term_definition param: (wordy_id) @identifier.argument)
+
+(function_application function_name: (path)? function_name: (wordy_id) @identifier.function)
 
 ;; Punctuation
 [
   (type_signature_colon)
   ":"
-] @punctuation.delimiter
+] @definition
 
 [
   "("
@@ -71,4 +82,6 @@
   "}"
   "["
   "]"
-] @punctuation.bracket
+] @bracket
+
+(test_watch_expression (wordy_id) @keyword.directive)
