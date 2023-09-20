@@ -3,7 +3,7 @@
   "name": "Unison",
   "organization": "Chris Krycho",
   "description": "Unison programming language support",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "categories": ["languages", "issues"],
   "activationEvents": ["onLanguage:unison", "onCommand:startUCM"],
   "entitlements": { "process": true },
