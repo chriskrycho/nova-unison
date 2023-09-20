@@ -7,8 +7,8 @@
   "categories": ["languages", "issues"],
   "activationEvents": ["onLanguage:unison", "onCommand:startUCM"],
   "entitlements": { "process": true },
-  "bugs": "https://github.com/chriskrycho/unison-nova-extension",
-  "homepage": "https://github.com/chriskrycho/unison-nova-extension/issues",
+  "bugs": "https://github.com/chriskrycho/nova-unison",
+  "homepage": "https://github.com/chriskrycho/nova-unison/issues",
   "funding": "https://github.com/sponsors/chriskrycho",
   "license": "BlueOak-1.0.0"
 }
